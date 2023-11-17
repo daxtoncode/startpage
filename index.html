@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.ico">
+    <title>​</title>
+</head>
+<body onload="dateTime()">
+    <header>
+        
+        <div>
+            <section id="day">
+                <h2>Day</h2>
+            </section>
+            <section id="date">
+                <h2>Date</h2>
+            </section>
+        </div>
+        <section id="time">
+            <h2>Time</h2>
+        </section>
+
+    </header>
+
+    <main>
+
+        <section class="image">
+            <img src="img/dino1.png" alt="">
+        </section>
+
+        <section class="links">
+            <div>
+                <h3>social</h3>
+                <hr>
+                <div>
+                    <ul>
+                        <li><a href="https://messenger.com/">messenger</a></li>
+                        <li><a href="https://reddit.com/">reddit</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h3>code</h3>
+                <hr>
+                <div>
+                    <ul>
+                        <li><a href="https://github.com/">github</a></li>
+                        <li><a href="https://leetcode.com/">leetcode</a></li>
+                        <li><a href="https://codeforces.com/">codeforces</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h3>fun</h3>
+                <hr>
+                <div>
+                    <ul>
+                        <li><a href="https://youtube.com/">youtube</a></li>
+                        <li><a href="https://monkeytype.com/">monkeytype</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+<script>
+    function dateTime() {
+        const datetime = new Date();
+
+        let day = datetime.toLocaleDateString('en-GB', {weekday: "short"});
+        let date = datetime.toLocaleDateString('en-GB');
+        let time = datetime.toLocaleTimeString('en-GB');
+        document.getElementById('day').innerHTML = '<h2 id="day">' + day + '</h2>';
+        document.getElementById('date').innerHTML = '<h2 id="date">' + date + '</h2>';
+        document.getElementById('time').innerHTML = '<h2 id="time">' + time + '</h2>';
+        setTimeout(dateTime, 1000);
+    }
+</script>
+</html>

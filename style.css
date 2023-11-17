@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    cursor: url(img/cactus.png), auto;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #181A1B;
+    color: #eff1ed;
+    text-align: center;
+    font-family: monospace;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    padding: 0 100px 0 50px;
+}
+
+header div {
+    display: flex;
+    gap: 30px;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 100px;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.image img {
+    height: 141px;
+}
+
+.image img:hover {
+    content: url(img/dino2.png);
+    padding-top: 51px;
+    height: 90px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.links div {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links div div{
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+   
+h3 {
+    font-size: 35px;
+    margin: 30px 0 10px 0;
+}
+
+hr {
+    color: #776E62;
+    height: 1px;
+    width: 80%;
+}
+
+li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #eff1ed;
+    padding: 5px;
+    height: 25px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+a:hover {
+    background-color: #eff1ed;
+    color: #181A1B;
+}
